@@ -3,3 +3,5 @@ Preview Content/
 SmartText/GenerativeAI-Info.plist
 TextGenius/Assets.xcassets
 SmartText/temp.swift
+*.xcuserstate
+xcuserdata/
