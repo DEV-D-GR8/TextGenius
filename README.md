@@ -2,6 +2,21 @@
 
 Welcome to the TextGenius, a Custom iOS Keyboard Extension project! This project provides a custom keyboard for iPhones, built using UIKit, and a companion app built with SwiftUI for customization options. The keyboard features a built-in search bar that integrates with the Gemini-1.5 flash API to quickly answer questions or generate content for commenting or replying.
 
+## Contents
+
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+  - [Requirements](#requirements)
+  - [Steps](#steps)
+- [Usage](#usage)
+- [Customization](#customization)
+  - [UIKit (Keyboard)](#uikit-keyboard)
+  - [SwiftUI (App)](#swiftui-app)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
 ## Features
 
 - **Embedded Search Bar**: Quickly ask questions from the Gemini-1.5 flash API.
