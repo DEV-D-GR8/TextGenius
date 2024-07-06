@@ -26,7 +26,7 @@ Welcome to the TextGenius, a Custom iOS Keyboard Extension project! This project
 1. **Clone the repository:**
     ```bash
     cd TextGenius
-    git clone https://github.com/your-username/ios-keyboard-extension.git
+    git clone https://github.com/DEV-D-GR8/TextGenius.git
     ```
 2. **Open the project in Xcode:**
     ```bash
