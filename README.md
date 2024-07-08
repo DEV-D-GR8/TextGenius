@@ -8,6 +8,7 @@ Welcome to the TextGenius, a Custom iOS Keyboard Extension project! This project
 - [Demo](#demo)
 - [Installation](#installation)
   - [Requirements](#requirements)
+  - [Dependencies](#dependencies)
   - [Steps](#steps)
 - [Usage](#usage)
 - [Customization](#customization)
@@ -22,6 +23,8 @@ Welcome to the TextGenius, a Custom iOS Keyboard Extension project! This project
 - **Embedded Search Bar**: Quickly ask questions from the Gemini-1.5 flash API.
 - **Content Generation**: Generate content for comments or replies effortlessly.
 - **Customization Options**: Enable autocorrect, double space for a period, auto-capitalization after space, and audio and haptic feedback.
+- **Special Functionality**: A special key to easily set the LLM API for generating smart replies/comments.
+- **Advanced Text Manipulation**: Long press on the spacebar to move the cursor, enhancing text editing efficiency, auto caps after period, and much more like a native iOS keyboard.
 - **UIKit & SwiftUI**: Built using UIKit for the keyboard and SwiftUI for the customization app.
 
 ## Demo (will be uploaded soon)
@@ -35,6 +38,12 @@ Welcome to the TextGenius, a Custom iOS Keyboard Extension project! This project
 - iOS 17.0+
 - Xcode 15.0+
 - Swift 5.10+
+
+### Dependencies
+
+- **Generative AI Swift**: [Generative-AI-Swift](https://github.com/Generative-AI-Swift)
+- **Lottie**: [Lottie](https://github.com/airbnb/lottie-ios)
+- **MarkdownKit**: [MarkdownKit](https://github.com/bmoliveira/MarkdownKit)
 
 ### Steps
 
