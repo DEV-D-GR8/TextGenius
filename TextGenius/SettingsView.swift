@@ -1,5 +1,5 @@
 //
-//  SwiftUIView.swift
+//  SettingsView.swift
 //  TextGenius
 //
 //  Created by Dev Asheesh Chopra on 30/06/24.
@@ -14,12 +14,27 @@ struct SettingsView: View {
     
     @AppStorage("isAutocorrectEnabled", store: UserDefaults(suiteName: "group.dev-d-gr8.TextGenius"))
     var isAutocorrectEnabled: Bool = false
+    
     @AppStorage("isDoubleSpaceForPeriodEnabled", store: UserDefaults(suiteName: "group.dev-d-gr8.TextGenius"))
     var isDoubleSpaceForPeriodEnabled: Bool = false
+    
     @AppStorage("isAutoCapsEnabled", store: UserDefaults(suiteName: "group.dev-d-gr8.TextGenius"))
     var isAutoCapsEnabled: Bool = false
-    @AppStorage("keyClickSoundsEnabled") var keyClickSoundsEnabled: Bool = true
-    @AppStorage("hapticFeedbackEnabled") var hapticFeedbackEnabled: Bool = true
+    
+    @AppStorage("promptClearEnabled", store: UserDefaults(suiteName: "group.dev-d-gr8.TextGenius"))
+    var promptClearEnabled: Bool = false
+    
+    @AppStorage("resetSpecialKeyAfterSubmissionEnabled", store: UserDefaults(suiteName: "group.dev-d-gr8.TextGenius"))
+    var resetSpecialKeyAfterSubmissionEnabled: Bool = true
+    
+    @AppStorage("longSpacePressCursorMovementEnabled", store: UserDefaults(suiteName: "group.dev-d-gr8.TextGenius"))
+    var longSpacePressCursorMovementEnabled: Bool = false
+    
+    @AppStorage("keyClickSoundsEnabled", store: UserDefaults(suiteName: "group.dev-d-gr8.TextGenius"))
+    var keyClickSoundsEnabled: Bool = true
+    
+    @AppStorage("hapticFeedbackEnabled", store: UserDefaults(suiteName: "group.dev-d-gr8.TextGenius"))
+    var hapticFeedbackEnabled: Bool = true
 
     var body: some View {
         ZStack{
@@ -47,8 +62,11 @@ struct SettingsView: View {
                     VStack {
                         
                         Toggle("Enable Autocorrect", isOn: $isAutocorrectEnabled)
+                        Toggle("Hold and Drag Spacebar to Move Cursor", isOn: $longSpacePressCursorMovementEnabled)
                         Toggle("Double Space for Period", isOn: $isDoubleSpaceForPeriodEnabled)
                         Toggle("Enable Automatic Caps After Period", isOn: $isAutoCapsEnabled)
+                        Toggle("Clear Prompt After Submission", isOn: $promptClearEnabled)
+                        Toggle("Reset Special Content Key After Submission", isOn: $resetSpecialKeyAfterSubmissionEnabled)
                         Toggle("Enable Key Click Sounds", isOn: $keyClickSoundsEnabled)
                         Toggle("Enable Haptic Feedback", isOn: $hapticFeedbackEnabled)
                         
