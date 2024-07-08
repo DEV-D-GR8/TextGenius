@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("hasLaunchedBefore") var hasLaunchedBefore: Bool = false
+    @AppStorage("hasLaunchedBefore", store: UserDefaults(suiteName: "group.dev-d-gr8.TextGenius")) var hasLaunchedBefore: Bool = false
 
     var body: some View {
         if hasLaunchedBefore {
