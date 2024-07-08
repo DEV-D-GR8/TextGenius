@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import AudioToolbox
+import MarkdownKit
 
 // MARK: - Utilities
 
@@ -70,7 +71,7 @@ extension KeyboardViewController {
         else {
             
             
-            finalPrompt = "Do Not Use 'Markdown Language' in your response. Do Not include beginning sentenecs like 'Here is your response:' in your response. Taking the previous instructions into consideration, respond to the following prompt: "+prompt
+            finalPrompt = "Do Not include beginning sentenecs like 'Here is your response:' in your response. Taking the previous instructions into consideration, respond to the following prompt: "+prompt
         }
         activityIndicator.startAnimating()
         
@@ -101,11 +102,19 @@ extension KeyboardViewController {
     internal func updateUIWithResponse(_ response: String) {
         responseScrollView.isHidden = false
         responseLabel.isHidden = false
-        responseLabel.text = response
         copyButton.isHidden = false
         regenerateButton.isHidden = false
-    }
 
+        let markdownParser = MarkdownParser(font: UIFont.systemFont(ofSize: 16))
+            
+            // Customizing styles for bold and italic, slightly increasing their size to make them stand out
+        markdownParser.bold.font = UIFont.boldSystemFont(ofSize: 16)  // Keeping bold the same size but bold
+        markdownParser.italic.font = UIFont.italicSystemFont(ofSize: 16)  // Keeping italic the same size but italic
+            
+            // Customizing header font, making it larger and bold
+        markdownParser.header.font = UIFont.boldSystemFont(ofSize: 18)
+        responseLabel.attributedText = markdownParser.parse(response)
+    }
     
     internal func toggleInputVisibility(show: Bool) {
         
