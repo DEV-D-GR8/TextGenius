@@ -27,9 +27,9 @@ Welcome to the TextGenius, a Custom iOS Keyboard Extension project! This project
 - **Advanced Text Manipulation**: Long press on the spacebar to move the cursor, enhancing text editing efficiency, auto caps after period, and much more like a native iOS keyboard.
 - **UIKit & SwiftUI**: Built using UIKit for the keyboard and SwiftUI for the customization app.
 
-## Demo (will be uploaded soon)
+## Demo
 
-[YouTube Demo]()
+Watch demo video on YouTube [by clicking here](https://youtu.be/VanQRvknO6k?si=V78ez5XzukGugD9i)
 
 ## Installation
 
