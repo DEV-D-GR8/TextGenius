@@ -12,6 +12,9 @@ struct InstructionView: View {
     @State private var navigateToNextPage = false
     @State private var textOpacity: Double = 0.0
     @State private var animate: Bool = true
+    @AppStorage("hasLaunchedBefore", store: UserDefaults(suiteName: "group.dev-d-gr8.TextGenius"))
+    var hasLaunchedBefore: Bool = false
+    
     var body: some View {
         NavigationView {
             ZStack{
@@ -37,6 +40,7 @@ struct InstructionView: View {
                     Spacer()
                     
                     Button("Continue") {
+                        hasLaunchedBefore = true
                         navigateToNextPage = true // Trigger navigation on button press
                     }
                     .padding()
