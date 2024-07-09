@@ -15,9 +15,6 @@ struct ContentView: View {
             SplashScreenView()
         } else {
             StartView()
-                .onAppear {
-                    hasLaunchedBefore = true
-                }
         }
         
     }
