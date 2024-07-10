@@ -29,7 +29,7 @@ Welcome to the TextGenius, a Custom iOS Keyboard Extension project! This project
 
 ## Demo
 
-Watch demo video on YouTube [by clicking here](https://youtu.be/VanQRvknO6k?si=V78ez5XzukGugD9i)
+Watch demo video on YouTube [by clicking here](https://youtu.be/5UIAogtqVv0?si=FIFv0eo52bBhmP0p)
 
 ## Installation
 
